@@ -1,0 +1,20 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# AWS test files
+bedrock-test.json
+nova-test.json
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db

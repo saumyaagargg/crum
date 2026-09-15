@@ -1,0 +1,108 @@
+{
+  "product": "Crum",
+  "profile": {
+    "name": "Saumyaa",
+    "city": "Gurugram",
+    "styles": [
+      "Hip-Hop"
+    ],
+    "level": "Intermediate",
+    "radiusKm": 10,
+    "days": [
+      "Saturday",
+      "Sunday"
+    ],
+    "timeStart": "16:00",
+    "timeEnd": "20:00",
+    "budget": 800,
+    "goal": "Workshop + practice partners"
+  },
+  "agent": {
+    "status": "CONFIRMED",
+    "lastRunAt": null,
+    "currentTask": "Reservation confirmed — monitoring the plan",
+    "timeline": [
+      {
+        "time": "03:37 am",
+        "title": "Monitoring continues",
+        "detail": "Crum will surface only if something changes.",
+        "kind": "done"
+      },
+      {
+        "time": "03:37 am",
+        "title": "Reservation completed",
+        "detail": "Confirmation CR-LUHX8U created.",
+        "kind": "done"
+      },
+      {
+        "time": "03:37 am",
+        "title": "Reservation approved",
+        "detail": "Human approval received.",
+        "kind": "done"
+      },
+      {
+        "time": "03:37 am",
+        "title": "Intention saved",
+        "detail": "Crum will keep working in the background.",
+        "kind": "done"
+      },
+      {
+        "time": "03:37 am",
+        "title": "Dance plan prepared",
+        "detail": "Event discovered, participants evaluated, availability verified."
+      }
+    ],
+    "decision": null,
+    "event": {
+      "id": "EVT001",
+      "name": "Hip-Hop Masterclass",
+      "date": "Saturday",
+      "time": "7:00 PM",
+      "location": "Pulse Studio, Gurugram",
+      "matchScore": 91,
+      "seatsLeft": 8,
+      "price": 699
+    },
+    "participants": [],
+    "confirmation": {
+      "confirmed": true,
+      "message": "Dance plan approved successfully.",
+      "id": "CRUM-CONFIRMED-001"
+    },
+    "monitoring": true
+  },
+  "stats": {
+    "sourcesMonitored": 12,
+    "opportunitiesEvaluated": 0,
+    "strongMatches": 0,
+    "coordinationRuns": 0,
+    "tasksCompleted": 1
+  },
+  "agentWorkflow": {
+    "intention": {
+      "style": "Hip-Hop",
+      "level": "Intermediate",
+      "day": "Saturday",
+      "time": "Evening",
+      "budget": 800,
+      "radius_km": 10,
+      "location": "Gurugram"
+    },
+    "events": "Found 2 matching event(s):\n\nEvent ID: EVT001\nName: Hip-Hop Masterclass\nStyle: Hip-Hop\nLevel: Intermediate\nDay: Saturday\nTime: 5:00 PM\nVenue: Studio 8\nLocation: Gurugram\nDistance: 7 km\nPrice: ₹499\nAvailable seats: 3\n\nEvent ID: EVT002\nName: Urban Choreo Session\nStyle: Hip-Hop\nLevel: Intermediate\nDay: Saturday\nTime: 7:00 PM\nVenue: The Dance Room\nLocation: Gurugram\nDistance: 9 km\nPrice: ₹699\nAvailable seats: 5\n",
+    "dancers": "Compatible dancers found:\nD001: Aisha — Hip-Hop, Intermediate\nD002: Rohan — Hip-Hop, Intermediate\n",
+    "availability": "\nAvailability verified.\n\nEvent: Hip-Hop Masterclass\nEvent ID: EVT001\nStatus: AVAILABLE\nAvailable seats: 3\nPrice: ₹499\n",
+    "plan": "\nDance plan prepared.\n\nEvent: EVT001\nParticipants: D001, D002\n\nPlan status: READY_FOR_HUMAN_APPROVAL\n\nCrum should ask the user for approval before making a booking\nor creating any financial commitment.\n",
+    "monitoring": "\nMonitoring plan: PLAN001\n\nCurrent status: ACTIVE\nVenue status: UNCHANGED\nTime status: UNCHANGED\nAvailability status: CONFIRMED\n\nNo changes detected.\n",
+    "approval_required": true,
+    "status": "READY_FOR_APPROVAL"
+  },
+  "agentActive": true,
+  "status": "CONFIRMED",
+  "decision": "Reservation approved",
+  "events": "Found 2 matching event(s):\n\nEvent ID: EVT001\nName: Hip-Hop Masterclass\nStyle: Hip-Hop\nLevel: Intermediate\nDay: Saturday\nTime: 5:00 PM\nVenue: Studio 8\nLocation: Gurugram\nDistance: 7 km\nPrice: ₹499\nAvailable seats: 3\n\nEvent ID: EVT002\nName: Urban Choreo Session\nStyle: Hip-Hop\nLevel: Intermediate\nDay: Saturday\nTime: 7:00 PM\nVenue: The Dance Room\nLocation: Gurugram\nDistance: 9 km\nPrice: ₹699\nAvailable seats: 5\n",
+  "dancers": "Compatible dancers found:\nD001: Aisha — Hip-Hop, Intermediate\nD002: Rohan — Hip-Hop, Intermediate\n",
+  "availability": "\nAvailability verified.\n\nEvent: Hip-Hop Masterclass\nEvent ID: EVT001\nStatus: AVAILABLE\nAvailable seats: 3\nPrice: ₹499\n",
+  "plan": "\nDance plan prepared.\n\nEvent: EVT001\nParticipants: D001, D002\n\nPlan status: READY_FOR_HUMAN_APPROVAL\n\nCrum should ask the user for approval before making a booking\nor creating any financial commitment.\n",
+  "monitoring": "\nMonitoring plan: PLAN001\n\nCurrent status: ACTIVE\nVenue status: UNCHANGED\nTime status: UNCHANGED\nAvailability status: CONFIRMED\n\nNo changes detected.\n",
+  "approvalRequired": false
+}

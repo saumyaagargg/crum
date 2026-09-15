@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7edf4">
+  <title>Crum — Autonomous Dance Agent</title>
+  <link rel="stylesheet" href="/frontend/styles.css">
+</head>
+
+<body>
+  <div class="grain"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header class="nav">
+    <a class="logo" href="#top" aria-label="Crum home">
+      <span class="logo-mark">✦</span>
+      <span>Crum</span>
+    </a>
+
+    <div class="nav-center">
+      <button class="theme-btn active" data-theme="pink">
+        <span class="theme-dot pink-dot"></span>
+        Bloom
+      </button>
+
+      <button class="theme-btn" data-theme="blue">
+        <span class="theme-dot blue-dot"></span>
+        Aqua
+      </button>
+
+      <button class="theme-btn" data-theme="red">
+        <span class="theme-dot red-dot"></span>
+        Ember
+      </button>
+    </div>
+
+    <div class="nav-right">
+      <span class="live-dot"></span>
+      <span>agent active</span>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR AUTONOMOUS DANCE AGENT</p>
+
+        <h1>
+          Set the<br>
+          <span>intention.</span>
+        </h1>
+
+        <p class="hero-text">
+          Tell Crum what kind of dance life you want once.
+          It quietly discovers, coordinates and monitors the rest.
+        </p>
+
+        <div class="hero-actions">
+          <button id="heroStart" class="btn btn-dark">
+            Set my intention <span>↗</span>
+          </button>
+
+          <a class="text-link" href="#agent">
+            See the agent work ↓
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Dance visual collage">
+
+        <div class="blob blob-main"></div>
+        <div class="blob blob-secondary"></div>
+
+        <div class="image-frame frame-a">
+          <img
+            id="heroMainImage"
+            src="/frontend/assets/picture 14.png"
+            alt="Dance visual"
+          >
+        </div>
+
+        <div class="image-frame frame-b">
+          <img
+            id="heroSecondaryImage"
+            src="/frontend/assets/picture 15.png"
+            alt="Dance detail"
+          >
+        </div>
+
+        <div class="shape-note">
+          find your<br>
+          next rhythm
+        </div>
+
+        <div class="sparkle s1">✦</div>
+        <div class="sparkle s2">✧</div>
+      </div>
+    </section>
+
+
+    <!-- INTENTION -->
+    <section class="intention section" id="intention">
+
+      <div class="section-head">
+        <p class="eyebrow">01 · SET ONCE</p>
+
+        <h2>
+          Tell it what<br>
+          <span>moves you.</span>
+        </h2>
+
+        <p>
+          After this, you can close the app.
+          The agent keeps working.
+        </p>
+      </div>
+
+      <form id="profileForm" class="glass-card">
+
+        <div class="field">
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            value="Saumyaa"
+            autocomplete="name"
+          >
+        </div>
+
+        <div class="field">
+          <label for="city">City</label>
+          <input
+            id="city"
+            name="city"
+            value="Gurugram"
+          >
+        </div>
+
+        <!-- DANCE STYLES -->
+        <div class="field full">
+          <label for="styles">Dance styles</label>
+
+          <select id="styles" name="styles">
+            <option selected>Hip-Hop</option>
+            <option>Contemporary</option>
+            <option>Freestyle</option>
+            <option>Bollywood</option>
+            <option>Jazz</option>
+            <option>Classical</option>
+            <option>Breaking</option>
+            <option>House</option>
+            <option>Locking</option>
+            <option>Waacking</option>
+            <option>Heels</option>
+            <option>K-Pop</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="level">Skill level</label>
+
+          <select id="level" name="level">
+            <option>Beginner</option>
+            <option selected>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="budget">Budget (₹)</label>
+
+          <input
+            id="budget"
+            name="budget"
+            type="number"
+            value="800"
+            min="0"
+          >
+        </div>
+
+        <div class="field full">
+          <label for="goal">Goal</label>
+
+          <select id="goal" name="goal">
+            <option selected>
+              Workshop + practice partners
+            </option>
+            <option>Classes</option>
+            <option>Jams</option>
+            <option>Auditions</option>
+          </select>
+        </div>
+
+        <button class="btn btn-dark full" type="submit">
+          Save intention →
+        </button>
+
+      </form>
+    </section>
+
+
+    <!-- AUTONOMY -->
+    <section class="autonomy section">
+
+      <div class="section-head wide">
+        <p class="eyebrow">02 · THE SHIFT</p>
+
+        <h2>
+          You stop searching.<br>
+          <span>Crum doesn't.</span>
+        </h2>
+      </div>
+
+      <div class="flow">
+
+        <article>
+          <small>01</small>
+          <strong>DISCOVER</strong>
+          <p>
+            New workshops, classes, jams and opportunities.
+          </p>
+        </article>
+
+        <div class="flow-line"></div>
+
+        <article>
+          <small>02</small>
+          <strong>EVALUATE</strong>
+          <p>
+            Fit, price, timing, distance and your history.
+          </p>
+        </article>
+
+        <div class="flow-line"></div>
+
+        <article>
+          <small>03</small>
+          <strong>COORDINATE</strong>
+          <p>
+            Compatible dancers and overlapping availability.
+          </p>
+        </article>
+
+        <div class="flow-line"></div>
+
+        <article>
+          <small>04</small>
+          <strong>MONITOR</strong>
+          <p>
+            Seats, changes, cancellations and deadlines.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- AGENT -->
+    <section class="agent section" id="agent">
+
+      <div class="status-card">
+
+        <p class="eyebrow light">
+          LIVE AGENT STATUS
+        </p>
+
+        <div class="status-ring">
+          <span class="ring-dot"></span>
+
+          <strong id="agentStatus">
+            IDLE
+          </strong>
+
+          <small>
+            working quietly
+          </small>
+        </div>
+
+        <div class="metric-grid">
+
+          <div>
+            <b id="sourceCount">12</b>
+            <span>sources</span>
+          </div>
+
+          <div>
+            <b id="evaluated">0</b>
+            <span>evaluated</span>
+          </div>
+
+          <div>
+            <b id="coordRuns">0</b>
+            <span>coordination</span>
+          </div>
+
+        </div>
+
+        <div class="button-stack">
+
+          <button
+            id="runBtn"
+            class="btn btn-light"
+          >
+            Simulate background run
+          </button>
+
+          <button
+            id="resetBtn"
+            class="btn btn-ghost-light"
+          >
+            Reset demo
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-card">
+
+        <div class="timeline-title">
+
+          <p class="eyebrow">
+            AGENT TIMELINE
+          </p>
+
+          <span id="taskState">
+            Waiting for an intention
+          </span>
+
+        </div>
+
+        <div id="timeline" class="timeline">
+
+          <div class="timeline-empty">
+            Save your intention and let Crum work.
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- DECISION -->
+    <section class="decision section">
+
+      <div class="decision-visual">
+
+        <div class="blob blob-decision"></div>
+
+        <div class="image-frame frame-c">
+
+          <img
+            id="decisionImage"
+            src="/frontend/assets/picture 16.png"
+            alt="Dance visual"
+          >
+
+        </div>
+
+        <div class="decision-sticker">
+          ONLY WHEN<br>
+          YOUR DECISION<br>
+          MATTERS
+        </div>
+
+      </div>
+
+
+      <div class="decision-copy">
+
+        <p class="eyebrow">
+          03 · HUMAN ESCALATION
+        </p>
+
+        <h2>
+          Something worth<br>
+          <span>saying yes to.</span>
+        </h2>
+
+        <div
+          id="decisionCard"
+          class="decision-card hidden"
+        ></div>
+
+        <div
+          id="confirmation"
+          class="confirmation hidden"
+        ></div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <span>Crum</span>
+
+    <span>
+      Set the intention. Let the agent carry the work.
+    </span>
+  </footer>
+
+
+  <script src="/frontend/app.js"></script>
+</body>
+</html>
